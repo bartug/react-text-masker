@@ -1,0 +1,33 @@
+{
+  "name": "react-text-masker",
+  "version": "0.1.1",
+  "description": "React provider that masks every text node until authorised.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "mask",
+    "security",
+    "provider"
+  ],
+  "author": "Bartug Sevindik",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "dev": "tsup src/index.ts --watch",
+    "prepare": "npm run build",
+    "test": "echo \"no tests yet\""
+  }
+}
